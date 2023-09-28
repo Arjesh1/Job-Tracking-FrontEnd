@@ -8,12 +8,14 @@ const Wrapper = styled.section`
     height: var(--nav-height);
     display: flex;
     align-items: center;
+    margin-top: 1rem;
   }
   .page {
     min-height: calc(100vh - var(--nav-height));
     display: grid;
     align-items: center;
     margin-top: -3rem;
+    padding: 1rem;
   }
   h1 {
     font-weight: 700;
@@ -36,11 +38,19 @@ const Wrapper = styled.section`
   }
   .btn {
     padding: 0.75rem 1rem;
+    
+  }
+
+  .btn:hover{
+    background: var(--primary-800) ;
+
+
   }
   @media (min-width: 992px) {
     .page {
       grid-template-columns: 1fr 400px;
       column-gap: 3rem;
+      padding: 3rem;
     }
     .main-img {
       display: block;

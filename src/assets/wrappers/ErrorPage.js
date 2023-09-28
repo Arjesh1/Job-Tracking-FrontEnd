@@ -26,6 +26,14 @@ const Wrapper = styled.main`
     color: var(--primary-500);
     text-transform: capitalize;
   }
+  .btn {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    
+  }
+  .btn:hover{
+    background: var(--primary-800) ;
+  }
 `;
-
 export default Wrapper;
