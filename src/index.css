@@ -185,9 +185,11 @@ ul {
   transition: var(--transition);
   text-transform: capitalize;
   display: inline-block;
+  padding: 1rem 0 1rem 0;
+
 }
 .btn:hover {
-  background: var(--primary-700);
+  background: var(--primary-800);
   box-shadow: var(--shadow-3);
 }
 .btn-hipster {
