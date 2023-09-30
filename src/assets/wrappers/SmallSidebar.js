@@ -9,13 +9,11 @@ const Wrapper = styled.aside`
     inset: 0;
     background: rgba(0, 0, 0, 0.7);
     display: flex;
-    justify-content: center;
     align-items: center;
     z-index: -1;
     opacity: 0;
     transition: var(--transition);
     visibility: hidden;
-    
   }
   .show-sidebar {
     z-index: 99;
@@ -24,12 +22,11 @@ const Wrapper = styled.aside`
   }
   .content {
     background: var(--background-secondary-color);
-    width: 50%;
-    margin: auto;
-    height: 95vh;
-    border-radius: var(--border-radius);
+    width: 75%;
+    height: 100vh;
     padding: 4rem 2rem;
     position: relative;
+    left: 2;
     display: flex;
     align-items: center;
     
@@ -38,7 +35,7 @@ const Wrapper = styled.aside`
   .close-btn {
     position: absolute;
     top: 10px;
-    left: 10px;
+    right: 10px;
     background: transparent;
     border-color: transparent;
     font-size: 2rem;
