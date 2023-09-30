@@ -21,7 +21,7 @@ const DashboardLayout = () => {
 
 
   return (
-    <DashboardContext.Provider value={{user, showSidebar, toggleSideBar,logoutUser }}>
+    <DashboardContext.Provider value={{user, showSidebar, toggleSideBar, logoutUser }}>
     <Wrapper>
       <main className='dashboard'>
         <SmallSideBar />

@@ -16,6 +16,8 @@ const Wrapper = styled.aside`
     .content {
       position: sticky;
       top: 0;
+      margin-top: 1rem;
+      padding: 0 0.5rem 0 0.5rem;
     }
     .show-sidebar {
       margin-left: 0;
@@ -24,7 +26,7 @@ const Wrapper = styled.aside`
       height: 6rem;
       display: flex;
       align-items: center;
-      padding-left: 2.5rem;
+      justify-content: center;
     }
     .nav-links {
       padding-top: 2rem;
@@ -52,7 +54,9 @@ const Wrapper = styled.aside`
       place-items: center;
     }
     .active {
-      color: var(--primary-500);
+      color: var(--primary-900);
+      background-color: var(--grey-200);
+      font-weight: bold;
     }
     .pending {
       background: var(--background-color);

@@ -1,14 +1,23 @@
 import Wrapper from "../assets/wrappers/BigSidebar"
 import { useDashboardContext } from "../pages/DashboardLayout"
-
+import NavLinks from './NavLinks'
+import Logo from './Logo'
 
 const BigSidebar = () => {
-const data = useDashboardContext()
-console.log(data)
+   const {showSidebar} = useDashboardContext()
+
 
   return (
     <Wrapper>
-      BigSidebar
+      <div className={showSidebar? 'sidebar-container' : 'sidebar-container show-sidebar'}>
+        <div className="content">
+          <header>
+            <Logo/>
+          </header>
+          <NavLinks isBigSidebar/>
+        </div>
+
+      </div>
     </Wrapper>
   )
 }
