@@ -6,22 +6,14 @@ import { createContext, useContext, useState } from 'react'
 const DashboardContext = createContext()
 
 const DashboardLayout = () => {
-  const user = {name: 'Arjesh'}
-  const [showSidebar, setShowSidebar] = useState(false)
-
-  const toggleSideBar= () =>{
-    setShowSidebar(!showSidebar)
-  }
-
-  const logoutUser = ()=>{
-    console.log('logout user');
-  }
+  
+  
 
 
 
 
   return (
-    <DashboardContext.Provider value={{user, showSidebar, toggleSideBar, logoutUser }}>
+    <DashboardContext.Provider>
     <Wrapper>
       <main className='dashboard'>
         <SmallSideBar />
