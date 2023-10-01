@@ -7,7 +7,6 @@ import { setShowToggle } from '../system/systemSlice'
 
 const BigSidebar = () => {
     const {showToggle} = useSelector(state => state.system)
-    console.log(showToggle);
   // const dispatch = useDispatch()
 
 
